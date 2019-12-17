@@ -54,7 +54,7 @@ if isempty( ALLSET )
     return;
 end;    
 
-if nargin < 2 || set_in < 0
+if nargin < 2 || any(set_in < 0)
 	% which set to delete
 	% -----------------
 	promptstr    = { 'Dataset(s) to delete:' };
